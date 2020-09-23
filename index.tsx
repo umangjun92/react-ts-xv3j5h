@@ -107,13 +107,7 @@ function getWinner(gameStruct: GameStruct) {
 			return rowWinner;
 		}
 		for (let j = 0; j < gameStruct[i].length; j++) {
-			col.push(gameStruct[j][i]);
-			// if (i === j) {
-			// 		diagonals[0].push(gameStruct[i][j]);	
-			// }
-      // if(Math.abs(i-j) === 0 || Math.abs(i-j) === 2 ){
-      //   diagonals[1].push(gameStruct[i][j])
-      // }
+			col.push(gameStruct[j][i]);			
 		}
 		const colWinner = check(col);
 		if (colWinner !== null) {
